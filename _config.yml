@@ -1,0 +1,30 @@
+title: Terminix
+description: "A tiling terminal emulator for Linux using GTK+3"
+baseurl: ""
+url: "http://terminix-web.com"
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Sass settings
+sass:
+  add_charset: true
+  sass_dir: assets/sass
+  style: :compressed
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
+  - CNAME
+  - node_modules
+
+# Plugin settings
+gems:
+  - jekyll-feed
+  - jekyll-sitemap

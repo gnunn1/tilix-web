@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: page.lang | default: 'en' }}">
+
+  {% include head.html %}
+
+  <body>
+
+    <main class="main" aria-label="Content">
+      <div class="row">
+        <div class="small-12 columns">
+          {% include navigation.html %}
+            {{ content }}
+          {% include footer.html %}
+        </div>
+      </div>
+    </main>
+
+    <script src="{{ site.baseurl }}/assets/js/jquery-3.1.1.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/foundation.min.js"></script>
+  </body>
+
+</html>
