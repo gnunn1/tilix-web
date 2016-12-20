@@ -3,5 +3,6 @@ title: Ubuntu
 id: ubuntu
 ---
 <h6>PPA</h6>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<p>Terminix is available for Ubuntu thanks to the WebUpd8 team and their PPA: [WebUpd8](https://launchpad.net/~webupd8team/+archive/ubuntu/terminix)</p>
 <h6>Official</h6>
+<p>Official Ubuntu support is [Waiting on LDC](https://launchpad.net/ubuntu/+source/terminix).</p>
