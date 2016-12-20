@@ -1,37 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <!-- Basic Page Needs
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>{{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}">
-    <meta name="author" content="{{ site.author }}">
-    <!-- Mobile Specific Metas
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- FONT
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-    <!-- CSS
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="{{site.baseurl}}/css/skeleton.css">
-    <link rel="stylesheet" href="{{site.baseurl}}/css/unslider.css">
-    <link rel="stylesheet" href="{{site.baseurl}}/css/custom.css">
-    <!-- Scripts
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="{{site.baseurl}}/js/jquery-1.12.0.min.js"></script>
-    <script src="{{site.baseurl}}/js/jquery-ui.min.js"></script>
-    <script src="{{site.baseurl}}/js/custom.js"></script>
-    <script src="{{site.baseurl}}/js/unslider.js"></script>
-    <script src="https://use.fontawesome.com/a51fafec44.js"></script>
-    <!-- Favicon
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="{{site.baseurl}}/images/favicon.png">
-</head>
-
-<body>
+---
+layout: default
+---
     <!-- Header
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="section hero">
@@ -50,7 +19,7 @@
                     </a>
                 </div>
                 <div class="one-third column float-right">
-                    <img class="u-max-full-width" alt="Terminix logo" src="{{site.baseurl}}/images/logo.png">
+                    <img class="u-max-full-width" alt="Terminix logo" src="{{site.baseurl}}/assets/images/logo.png">
                 </div>
             </div>
         </div>
@@ -178,6 +147,5 @@
     </footer>
     <!-- End Document
                     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
 
-</html>
+    {% include scripts.html %}
