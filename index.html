@@ -1,90 +1,185 @@
+---  
+---
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+<html lang="en">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+<head>
+    <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author }}">
+    <!-- Mobile Specific Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FONT
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <!-- CSS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="{{site.baseurl}}/css/skeleton.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/unslider.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/custom.css">
+    <!-- Scripts
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="{{site.baseurl}}/js/jquery-1.12.0.min.js"></script>
+    <script src="{{site.baseurl}}/js/jquery-ui.min.js"></script>
+    <script src="{{site.baseurl}}/js/custom.js"></script>
+    <script src="{{site.baseurl}}/js/unslider.js"></script>
+    <script src="https://use.fontawesome.com/a51fafec44.js"></script>
+    <!-- Favicon
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="{{site.baseurl}}/images/favicon.png"> 
+</head>
 
-    <title>Terminix-web by gnunn1</title>
-  </head>
-
-  <body>
-
-    <header>
-      <div class="container">
-        <h1>Terminix</h1>
-        <h2>A tiling terminal emulator</h2>
-
-        <section id="downloads">
-          <a href="https://github.com/gnunn1/terminix/zipball/master" class="btn">Source as .zip</a>
-          <a href="https://github.com/gnunn1/terminix/tarball/master" class="btn">Source as .tar.gz</a>
-          <a href="https://github.com/gnunn1/terminix" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        <h3>
-<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h3>
-
-<p>Terminix is an advanced GTK3 tiling terminal emulator that follows the <a href="https://developer.gnome.org/hig/stable">Gnome Human Interface Guidelines</a>.</p>
-
-<p><img src="https://camo.githubusercontent.com/807cfb124c461a8c65095ae9aa773bcd070d2a20/687474703a2f2f7777772e67657870657274732e636f6d2f696d672f7465726d696e69782f7465726d696e697831312e706e67"/></p>
-
-<h3>
-<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h3>
-
-<p>Terminix is a feature rich terminal emulator, some of it's features include:</p>
-
-<ul>
-<li>Layout terminals in any fashion by splitting them horizontally or vertically
-<li>Terminals can be re-arranged using drag and drop both within and between windows
-<li>Terminals can be detached into a new window via drag and drop
-<li>Input can be synchronized between terminals so commands typed in one terminal are replicated to the others
-<li>The grouping of terminals can be saved and loaded from disk
-<li>Terminals support custom titles
-<li>Color schemes are stored in files and custom color schemes can be created by simply creating a new file
-<li>Transparent background
-<li>Background images
-<li>Quake mode support (i.e. drop-down terminal)
-<li>Custom hyperlinks
-<li>Automatic (triggered) profile switches based on hostname and directory
-<li>Supports notifications when processes are completed out of view. Requires the Fedora notification patches for VTE
-<li>Experimental trigger support (Requires patched VTE, see wiki )
-<li>Experimental badge support (Requires patched VTE, see wiki
-</ul>
-
-<h3>
-<a id="download" class="anchor" href="#download" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download</h3>
-
-<p>The best way to get Terminix is from packages maintained for your specific Linux distribution. The following distributions have packages available.</p>
-
-<table>
-  <tr><th>Distribution</th><th>Package</th></tr>
-  <tr><td>Arch</td><td><a href="https://aur.archlinux.org/packages/terminix">AUR Terminix Package</a></td></tr>
-  <tr><td>Fedora</td><td><a href="https://copr.fedorainfracloud.org/coprs/heikoada/terminix">COPR Repository</a></td></tr>
-  <tr><td>Cent OS 7.2</td><td><a href="https://copr.fedorainfracloud.org/coprs/heikoada/terminix">EPEL Package via COPR</a></td></tr>
-  <tr><td>Debian</td><td><a href="https://packages.debian.org/sid/terminix">Package, 32bit version available</a></td></tr>
-  <tr><td>Ubuntu PPA</td><td><a href="https://launchpad.net/~webupd8team/+archive/ubuntu/terminix">WebUpd8</a></td></tr>
-  <tr><td>Ubuntu Offical</td><td><a href="https://launchpad.net/ubuntu/+source/terminix">Waiting on LDC</a></td></tr>
-  <tr><td>Tanglu</td><td><a href="http://packages.tanglu.org/dasyatis/terminix">Part of Tanglu 4</a></td></tr>
-  <tr><td>OpenSUSE</td><td><a href="https://software.opensuse.org/package/terminix">Package Search</a></td></tr>
-  <tr><td>AOSC OS</td><td><a href="https://github.com/AOSC-Dev/aosc-os-abbs/tree/staging/extra-utils/terminix">ABBS Manifest</a></td></tr>
-</table>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>The primary author of Terminix is Gerald Nunn (<a href="https://github.com/gnunn1" class="user-mention">@gnunn1</a>), however many people have contributed to Terminix to get it where it is today. 
-The list of contributors is available <a href="https://github.com/gnunn1/terminix/blob/master/CREDITS.md">here</a>.</p>
-
-      </section>
+<body>
+    <!-- Header
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section hero">
+        <div class="container">
+            <div class="row">
+                <div class="one-half column">
+                    <h1>Terminix</h1>
+                    <h4 class="hero-heading">
+                        Terminix is an advanced GTK3 tiling terminal emulator that follows the Gnome Human Interface Guidelines.
+                    </h4> 
+                    <span class="scroll">
+                        <a class="button button-primary" href="#packages">Try Terminix</a>
+                    </span> 
+                    <a class="button button-primary" href="https://github.com/gnunn1/terminix/">
+                        <span class="lsicon-github"></span> &nbsp; Fork me
+                    </a> 
+                </div>
+                <div class="one-third column float-right"> 
+                    <img class="u-max-full-width" alt="Terminix logo" src="{{site.baseurl}}/images/logo.png"> 
+                </div>
+            </div>
+        </div>
     </div>
-
+    <br>
+    <br>
+        
+    <!-- Screenshots
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section categories">
+        <div class="container">
+            <h3 class="section-heading">Screenshots</h3>
+            <div class="my-slider">
+                <ul>
+                {% for image in site.static_files %}
+                    {% if image.path contains 'images/gallery' %}
+                    <li> <img class="u-max-full-width" src="{{site.baseurl}}{{image.path}}" alt="{{image.name | replace:'.png', ''}}"> </li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
     
-  </body>
+    <!-- Features
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section features">
+        <div class="container">
+            <h3 class="section-heading">Features</h3> 
+            <p class="section-description">Some text needed here.</p>
+            {% if site.features != empty %}
+                {% for feature in site.features %} 
+                    {% assign loopindex = forloop.index | modulo: 3 %} 
+                    {% if loopindex == 1 %} 
+                    <div class="row">
+                    {% endif %}
+                    <div class="one-third column value"> 
+                        <i class="fa {{ feature.icon }} fa-5x" aria-hidden="true"></i>
+                        <h5 class="value-multiplier">{{ feature.title }}</h5>
+                      {{ feature.content }}
+                    </div> 
+                    {% if loopindex == 0 %} 
+                    </div> 
+                    {% endif %} 
+                {% endfor %} 
+            {% endif %}
+        </div>
+    </div> 
+    <br>
+    <br>
+
+    <!-- Packages
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section packages" id="packages">
+        <div class="container">
+            <h3 class="section-heading">Getting Terminix</h3>
+            <p class="section-description">The best way to get Terminix is from packages maintained for your specific Linux distribution. The following distributions have packages available.</p>
+			{% if site.packages != empty %}
+            <div class="tabs">
+                <nav>
+                    <ul class="tabs-navigation"> 
+                        {% for package in site.packages %} 
+                        {% if package.id == "/packages/aoscos" %} 
+                        <li class="selected">
+                        {% else %}
+                        <li>
+                        {% endif %}
+                            <a data-content="{{ package.id }}">{{ package.title }}</a> 
+                        </li> 
+                        {% endfor %} 
+                    </ul>
+                </nav>
+                <ul class="tabs-content"> 
+                    {% for package in site.packages %} 
+                        {% if package.id == "/packages/aoscos" %}
+                        <li data-content="{{ package.id }}" class="selected"> 
+                        {% else %}
+                        <li data-content="{{ package.id }}"> 
+                        {% endif %} 
+                        {{ package.content }} 
+                        </li> 
+                    {% endfor %} 
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <!-- Authors
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <br>
+    <br>
+    <div class="section authors" id="authors">
+        <div class="container">
+            <h3 class="section-heading">Contribute</h3>
+            <div style="float:left;margin-right:10px;"> 
+                <i class="fa fa-globe fa-5x" aria-hidden="true"></i> 
+            </div>
+            <div>
+                Terminix is localized using Weblate, please visit the Weblate hosted Terminix transations site in order to assist with translations, please do not submit direct pull requests to the repository for translations. 
+            </div>
+            <br>
+            <br class="clear-fix">
+            <div style="float:left;margin-right:10px;"> 
+                <i class="fa fa-github fa-5x" aria-hidden="true"></i> 
+            </div>
+            <div>
+                If you are having issues with Terminix, feel free to open issues here in Github as necessary. Developers and users can also be found on IRC on the freenode network in the #terminix room. 
+            </div>
+        </div>
+    </div>
+            
+    <!-- Footer
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <footer class="footer">
+        <div class="container clearfix">
+            <div class="text-muted footer-left">
+                Designed and coded with love by <a href="https://github.com/bil-elmoussaoui">Bilal Elmoussaoui.</a> 
+            </div>
+            <div class="text-muted footer-right">
+                Published by <a href="https://pages.github.com/">GitHub Pages</a> | <span class="scroll"><a href="#top">Back to top</a></span>
+            </div>
+        </div>
+    </footer>
+    <!-- End Document
+                    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
 </html>
