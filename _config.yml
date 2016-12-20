@@ -1,30 +1,16 @@
-title: Terminix
-description: "A tiling terminal emulator for Linux using GTK+3"
-baseurl: ""
-url: "http://terminix-web.com"
+baseurl: "/terminix-web"
 
-# Markdown settings
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+title: Terminix &colon; A tiling terminal emulator
+author: The author of Terminix..
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 
-# Sass settings
-sass:
-  add_charset: true
-  sass_dir: assets/sass
-  style: :compressed
 
-# Build settings
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - package.json
-  - README.md
-  - CNAME
-  - node_modules
-
-# Plugin settings
-gems:
-  - jekyll-feed
-  - jekyll-sitemap
+exclude: [README.md]
+collections:
+  features:
+    output: false
+  packages:
+    output: false
