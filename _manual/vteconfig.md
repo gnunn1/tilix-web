@@ -1,3 +1,7 @@
+---
+title: VTE Configuration
+id: vteconfig
+---
 #### Background
 
 Terminix uses a GTK+ 3 widget called VTE (Virtual Terminal Emulator). The VTE widget was originally designed as the back-end for Gnome Terminal but was fortunately designed as a GTK widget so that other terminal emulator applications could leverage it instead of rolling their own. Many popular Linux terminal emulators use this component.
