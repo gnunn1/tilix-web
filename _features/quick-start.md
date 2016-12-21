@@ -1,5 +1,5 @@
 ---
 icon: fa-floppy-o
-title: Quick Start
+title: Persistent Layouts
 ---
-The grouping of terminals can be saved and loaded from disk.
+Grouping of terminals can be saved and loaded from disk.

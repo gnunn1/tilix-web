@@ -131,13 +131,11 @@ ul.tabs-content li {
     ul.tabs-navigation {
         background-color:#222222;
     }
-    ul.tabs-navigation li {float:none;width:auto;}
-    ul.tabs-navigation li:not(.selected){
-        display:none;
+    ul.tabs-navigation li {
+        float:none;
+        width:auto;
     }
-    ul.tabs-content li {
-        border:0;
-    }
+
 
 }
 @-webkit-keyframes fadeEffect {

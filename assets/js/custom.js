@@ -18,6 +18,17 @@
             }, "slow");
             return false;
         });
+         $('.row').each(function (index) {
+            var max_height = 0;
+            $(this).find('.one-third').each(function (index) {
+                if($(this).outerHeight() > max_height)
+              {
+                max_height = $(this).outerHeight();
+              }          
+             });
+            $(this).find('.one-third').css('min-height', max_height);
+            max_height = 0;
+        });
         $('.my-slider').unslider({
             autoplay: true
             , infinite: true
