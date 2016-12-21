@@ -35,5 +35,17 @@
             $(".tabs-content li[data-content='" + tab_id + "']").show();
             event.preventDefault();
         });
-         
+
     });
+
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function navbar() {
+
+      var nav = document.getElementById("navbar");
+      if ( !nav.classList.contains("responsive") ) {
+          nav.classList.add("responsive");
+          return;
+      }
+
+      nav.classList.remove("responsive");
+    }
