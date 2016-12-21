@@ -16,7 +16,7 @@ When Terminix is run with the `--quake` switch, it will check if a quake style w
 
 Configuring this hot key for GNOME is quite simple, simply open the Keyboard settings and configure a hot key as per the example in the screenshot below:
 
-![](images/manual/hotkey.png)
+![](assets/images/manual/hotkey.png)
 
 ### Wayland
 

@@ -1,0 +1,92 @@
+.topnav {
+  width: 100%;
+  background-color: $very-dark-grey;
+
+  .navigation {
+    max-width: 960px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+
+
+    li {
+      float: left;
+      margin: 0;
+      padding: 0;
+
+      a {
+        display: inline-block;
+        color: $white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 17px;
+
+        &:hover {
+          background-color: $dark-grey;
+        }
+
+      }
+
+      &.donate {
+        float: right;
+      }
+
+      &.hamburger-button {
+        display: none;
+      }
+
+      @media screen and (max-width: 750px) {
+
+        &:not(:first-child) {
+          display: none;
+        }
+
+        &.donate {
+          float: left;
+        }
+
+        &.hamburger-button {
+          float: right;
+          display: inline-block;
+        }
+
+      }
+
+    }
+
+    @media screen and (max-width: 750px) {
+
+      &.responsive {
+        position: relative;
+
+        li {
+          float: none;
+          display: inline;
+
+          &.hamburger-button {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+
+          a {
+            display: block;
+            text-align: left;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+
+}
+
+@media screen and (max-width: 750px) {
+}

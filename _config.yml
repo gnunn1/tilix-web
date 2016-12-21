@@ -6,6 +6,9 @@ description: > # this means to ignore newlines until "baseurl:"
   Terminix is an advanced GTK3 tiling terminal for Linux based 
   on the Gnome Human Interface Guidelines (HIG).
 
+sass:
+  sass_dir: assets/sass
+  style: :compressed
 
 exclude: [README.md]
 collections:
