@@ -1,0 +1,13 @@
+---
+# Front matter comment to ensure Jekyll properly reads file
+---
+
+@charset "UTF-8";
+
+@import
+        "abstracts/variables",
+
+        "base/base",
+
+        "partials/navbar"
+;
