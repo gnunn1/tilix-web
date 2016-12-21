@@ -4,7 +4,7 @@ id: badges
 ---
 *Note that badges requires that the GTK VTE widget be built with a terminix specific [patch](https://github.com/gnunn1/terminix/blob/master/experimental/vte/alternate-screen.patch), otherwise badges are disabled. Arch users can access this functionality by installing the [vte3-terminix-git](https://aur.archlinux.org/packages/vte3-terminix-git) package.*
 
-![](images/manual/badges.png)
+![](assets/images/manual/badges.png)
 
 Badges are a feature that displays specified text in the background of the terminal. They can be used for a variety of purposes including acting as visual reminders or as a way to display the terminal title when the title is disabled. 
 
