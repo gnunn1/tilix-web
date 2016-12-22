@@ -2,7 +2,11 @@
     <!-- Basic Page Needs
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
+    {% if page.title %}
+    <title>{{ page.title }}</title>
+    {% else %}
     <title>{{ site.title }}</title>
+    {% endif %}
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="{{ site.author }}">
     <!-- Mobile Specific Metas
