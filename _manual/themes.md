@@ -7,7 +7,7 @@ layout: default
 
 Terminix supports themes for configuring the color scheme of the terminal, each theme is stored in a file. A theme file is a simple json file that specifies the color for each element as well as identifying whether certain colors should be used or defaulted. Here is an example of a theme file:
 
-```
+{% highlight json linenos %}
 {
     "name": "Orchis",
     "comment": "Tango but using Orchis foreground/background colors",
@@ -41,7 +41,7 @@ Terminix supports themes for configuring the color scheme of the terminal, each 
         "#EDEDEB"
     ]
 }
-```
+{% endhighlight %}
 
 Themes are loaded from one of two places by Terminix. The first is ```/usr/share/terminix/schemes```, these are the themes that are shipped with Terminix. The second place that Terminix looks for theme files is in the user home directory, specifically ```~/.config/terminix/schemes```. Users can place any custom themes they want to use here.
 

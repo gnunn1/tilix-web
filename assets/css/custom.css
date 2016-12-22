@@ -1,22 +1,3 @@
-[class^="lsicon-"]:before,
-[class*=" lsicon-"]:before {
-    font-family: "lsi-fontello";
-    font-style: normal;
-    font-weight: 400;
-    speak: none;
-    display: inline-block;
-    text-decoration: inherit;
-    width: 1.2em;
-    text-align: center;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1.2em
-}
-
-.lsicon-github:before {
-    content: '\e813'
-}
-
 .footer {
     margin-top: 20px;
     bottom: 0;
