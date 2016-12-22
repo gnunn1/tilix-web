@@ -1,11 +1,11 @@
 ---
 title: New Release
-layout: default
+layout: post
 description: Terminix 1.4.0 released with improved preference/profile dialog, new features and many bug fixes.
 icon: fa-flask 
+date: 2016-12-22 00:00:00 +0100
 ---
 
-<h1>{{page.title}}</h1>
 Terminix 1.4.0 has been released, the following changes were made in this release:
 
 * Merged the preferences and profiles dialogs together based on a design from Allan Day for a much more user friendly experience
