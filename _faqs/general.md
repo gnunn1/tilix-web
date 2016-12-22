@@ -4,9 +4,7 @@ id: general
 ---
 ##### Is there a 32 bit version available?
 
-At this time there is no 32 bit version of Terminix available. Building and testing on 32 bit is a significant effort that we'd rather devote to development. The number of people using 32 bit Linux on the desktop is rather small and shrinking all the time so we feel it's the right choice at this time. Having said that, if people want to build and test Terminix on a 32 bit platform we'd be happy to accept any PRs to fix 32 bit issues.
-
-At this point as of 17 July 2016, one PR that hopefully allows Terminix to compile and run as a 32 bit application has been accepted, however as per above no official project testing/support is being done to support this.
+At this time there are no plans for an official 32 bit version of Terminix available. Building, testing and supporting on 32 bit is a significant effort that we'd rather devote to development. The number of people using 32 bit Linux on the desktop is rather small and shrinking all the time so we feel it's the right choice at this time. Having said that, if people want to build and test Terminix on a 32 bit platform please feel free. If there are any issues, we'd be happy to accept any PRs to fix these issues. Do note though that no official project testing/support is being done to support 32 bit.
 
 ##### Why use D instead of &lt;insert language&gt; here
 

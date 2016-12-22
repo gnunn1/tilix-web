@@ -35,9 +35,9 @@ In the later scenario, we may generally not be too interested in checking for tr
 
 Here are some examples to help you use this feature:
 
-Regular Express| Action | Parameter | Description
--------|-----|-----|-----
-^\[(?P<user>.*)@(?P<host>[-a-zA-Z0-9]*)|Update State|username=$1;hostname=$2|Parses the username and hostname from a Linux prompt command that uses the following format: *[username@hostname directory]$*
+Regular Expression | Action | Parameter | Description
+-------------------|--------|-----------|------------
+^\[(?P&lt;user>.*)@(?P&lt;host>[-a-zA-Z0-9]*) | Update State | username=$1;hostname=$2 | Parses the username and hostname from a Linux prompt command that uses the following format: *[username@hostname directory]$*
 
 ### How It Works
 
