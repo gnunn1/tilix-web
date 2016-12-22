@@ -16,3 +16,11 @@ collections:
     output: false
   packages:
     output: false
+  faqs:
+    output: false
+  manual:
+    output: true
+    permalink: /manual/:path/
+  news:
+    output: true
+    permalink: /news/:path/

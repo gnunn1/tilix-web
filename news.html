@@ -1,0 +1,27 @@
+---
+permalink: /news/
+title: Terminix&colon; News
+layout: default
+---
+
+ <div class="section">
+    {% if site.news != empty %}
+	    {% for news in site.news %}
+	        {% assign loopindex = forloop.index | modulo: 3 %}
+	        {% if loopindex == 1 %}
+	        <div class="row">
+	        {% endif %}
+	        <div class="one-third column value">
+	        <i class="fa {{ news.icon }} fa-5x" aria-hidden="true"></i>
+	        <h5 class="value-multiplier"><a href="{{site.baseurl}}{{news.id}}">{{news.title}}</a></h5>
+	          <p>{{ news.description }}</p>
+	        </div>
+	        {% if loopindex == 0 %}
+	        </div>
+	        {% endif %}
+	    {% endfor %}
+  	{% else %}
+  		<h1>No news at the moment... </h1>
+	{% endif %}
+
+    </div>

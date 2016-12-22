@@ -1,6 +1,7 @@
 ---
 title: Command Line Actions
 id: cliactions
+layout: default
 ---
 #### Introduction
 

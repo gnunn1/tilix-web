@@ -1,6 +1,7 @@
 ---
 title: Automatic Profile Switching
 id: profileswitch
+layout: default
 ---
 ### Introduction
 

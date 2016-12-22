@@ -1,0 +1,14 @@
+---
+permalink: /manual/
+title: Terminix&colon; Manual
+layout: default
+---
+
+<p>Welcome to the Terminix manual, here is where you will learn to use all of the features in Terminix and make your experience as fun and productive as possible. Click on a link below to read more about a specific feature and how to get started using it.</p>
+{% for manual in site.manual %}
+    <div id="{{manual.id}}">
+    	<ul>
+        	<li><a href="{{site.baseurl}}{{manual.id}}">{{manual.title}}</a></li>
+    	</ul>
+    </div>
+{% endfor %}

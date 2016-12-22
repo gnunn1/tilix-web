@@ -1,6 +1,7 @@
 ---
 title: Triggers
 id: triggers
+layout: default
 ---
 *Note that trigger support requires that the GTK VTE widget be built with a terminix specific [patch](https://github.com/gnunn1/terminix/blob/master/experimental/vte/alternate-screen.patch), otherwise triggers are disabled. Arch users can access this functionality by installing the [vte3-terminix-git](https://aur.archlinux.org/packages/vte3-terminix-git) package.*
 

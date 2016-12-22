@@ -4,23 +4,21 @@ layout: default
     <!-- Header
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="section hero">
-        <div class="container">
-            <div class="row">
-                <div class="one-half column">
-                    <h1>Terminix</h1>
-                    <h4 class="hero-heading">
-                        Terminix is an advanced GTK3 tiling terminal emulator that follows the Gnome Human Interface Guidelines.
-                    </h4>
-                    <span class="scroll">
-                        <a class="button button-primary" href="#packages">Try Terminix</a>
-                    </span>
-                    <a class="button button-primary" href="https://github.com/gnunn1/terminix/">
-                        <span class="lsicon-github"></span> &nbsp; Fork me
-                    </a>
-                </div>
-                <div class="one-third column float-right">
-                    <img class="u-max-full-width" alt="Terminix logo" src="{{site.baseurl}}/assets/images/logo.png">
-                </div>
+        <div class="row">
+            <div class="one-half column">
+                <h1>Terminix</h1>
+                <h4 class="hero-heading">
+                    Terminix is an advanced GTK3 tiling terminal emulator that follows the Gnome Human Interface Guidelines.
+                </h4>
+                <span class="scroll">
+                    <a class="button button-primary" href="#packages">Try Terminix</a>
+                </span>
+                <a class="button button-primary" href="https://github.com/gnunn1/terminix/">
+                    <span class="lsicon-github"></span> &nbsp; Fork me
+                </a>
+            </div>
+            <div class="one-third column float-right">
+                <img class="u-max-full-width" alt="Terminix logo" src="{{site.baseurl}}/assets/images/logo.png">
             </div>
         </div>
     </div>
@@ -30,17 +28,15 @@ layout: default
     <!-- Screenshots
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="section categories">
-        <div class="container">
-            <h3 class="section-heading">Screenshots</h3>
-            <div class="my-slider">
-                <ul>
-                {% for image in site.static_files %}
-                    {% if image.path contains 'images/gallery' %}
-                    <li> <img class="u-max-full-width" src="{{site.baseurl}}{{image.path}}" alt="{{image.name | replace:'.png', ''}}"> </li>
-                    {% endif %}
-                {% endfor %}
-                </ul>
-            </div>
+        <h3 class="section-heading">Screenshots</h3>
+        <div class="my-slider">
+            <ul>
+            {% for image in site.static_files %}
+                {% if image.path contains 'images/gallery' %}
+                <li> <img class="u-max-full-width" src="{{site.baseurl}}{{image.path}}" alt="{{image.name | replace:'.png', ''}}"> </li>
+                {% endif %}
+            {% endfor %}
+            </ul>
         </div>
     </div>
     <br>
@@ -48,26 +44,24 @@ layout: default
 
     <!-- Features
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="section features">
-        <div class="container">
-            <h3 class="section-heading">Features</h3>
-            {% if site.features != empty %}
-                {% for feature in site.features %}
-                    {% assign loopindex = forloop.index | modulo: 3 %}
-                    {% if loopindex == 1 %}
-                    <div class="row">
-                    {% endif %}
-                    <div class="one-third column value">
-                        <i class="fa {{ feature.icon }} fa-5x" aria-hidden="true"></i>
-                        <h5 class="value-multiplier">{{ feature.title }}</h5>
-                      {{ feature.content }}
-                    </div>
-                    {% if loopindex == 0 %}
-                    </div>
-                    {% endif %}
-                {% endfor %}
-            {% endif %}
-        </div>
+    <div class="section features" id="features">
+        <h3 class="section-heading">Features</h3>
+        {% if site.features != empty %}
+            {% for feature in site.features %}
+                {% assign loopindex = forloop.index | modulo: 3 %}
+                {% if loopindex == 1 %}
+                <div class="row">
+                {% endif %}
+                <div class="one-third column value">
+                    <i class="fa {{ feature.icon }} fa-5x" aria-hidden="true"></i>
+                    <h5 class="value-multiplier">{{ feature.title }}</h5>
+                  {{ feature.content }}
+                </div>
+                {% if loopindex == 0 %}
+                </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
     </div>
     <br>
     <br>
@@ -75,72 +69,73 @@ layout: default
     <!-- Packages
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="section packages" id="packages">
-        <div class="container">
-            <h3 class="section-heading">Getting Terminix</h3>
-            <p class="section-description">The best way to get Terminix is from packages maintained for your specific Linux distribution. The following distributions have packages available.</p>
-			{% if site.packages != empty %}
-            <div class="tabs">
-                <nav>
-                    <ul class="tabs-navigation">
-                        {% for package in site.packages %}
-                        {% if package.id == "/packages/aoscos" %}
-                        <li class="selected">
-                        {% else %}
-                        <li>
-                        {% endif %}
-                            <a data-content="{{ package.id }}">{{ package.title }}</a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </nav>
-                <ul class="tabs-content">
+        <h3 class="section-heading">Getting Terminix</h3>
+        <p class="section-description">The best way to get Terminix is from packages maintained for your specific Linux distribution. The following distributions have packages available.</p>
+		{% if site.packages != empty %}
+        <div class="tabs">
+            <nav>
+                <ul class="tabs-navigation" id="tabs">
                     {% for package in site.packages %}
-                        {% if package.id == "/packages/aoscos" %}
-                        <li data-content="{{ package.id }}" class="selected">
-                        {% else %}
-                        <li data-content="{{ package.id }}">
-                        {% endif %}
-                        {{ package.content }}
-                        </li>
+                    {% if package.id == "/packages/aoscos" %}
+                    <li class="selected">
+                    {% else %}
+                    <li>
+                    {% endif %}
+                        <a data-content="{{ package.id }}">{{ package.title }}</a>
+                    </li>
                     {% endfor %}
+                    <li class="hamburger-button">
+                      <a href="javascript:void(0);" onclick="packagestabs()">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                      </a>
+                    </li>
                 </ul>
-            </div>
-            {% endif %}
+            </nav>
+            <ul class="tabs-content">
+                {% for package in site.packages %}
+                    {% if package.id == "/packages/aoscos" %}
+                    <li data-content="{{ package.id }}" class="selected">
+                    {% else %}
+                    <li data-content="{{ package.id }}">
+                    {% endif %}
+                    {{ package.content }}
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
+        {% endif %}
     </div>
     <!-- Authors
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <br>
     <br>
     <div class="section authors" id="authors">
-        <div class="container">
-            <h3 class="section-heading">Contribute</h3>
-            <div style="float:left;margin-right:10px;">
-                <i class="fa fa-globe fa-5x" aria-hidden="true"></i>
-            </div>
-            <div>
-                Terminix is localized using Weblate, please visit the Weblate hosted Terminix transations site in order to assist with translations, please do not submit direct pull requests to the repository for translations.
-            </div>
-            <br>
-            <br class="clear-fix">
-            <div style="float:left;margin-right:10px;">
-                <i class="fa fa-github fa-5x" aria-hidden="true"></i>
-            </div>
-            <div>
-                If you are having issues with Terminix, feel free to open issues here in Github as necessary. Developers and users can also be found on IRC on the freenode network in the #terminix room.
-            </div>
+        <h3 class="section-heading">Contribute</h3>
+        <div style="float:left;margin-right:10px;">
+            <i class="fa fa-globe fa-5x" aria-hidden="true"></i>
+        </div>
+        <div>
+            Terminix is localized using Weblate, please visit the Weblate hosted Terminix transations site in order to assist with translations, please do not submit direct pull requests to the repository for translations.
+        </div>
+        <br>
+        <br class="clear-fix">
+        <div style="float:left;margin-right:10px;">
+            <i class="fa fa-github fa-5x" aria-hidden="true"></i>
+        </div>
+        <div>
+            If you are having issues with Terminix, feel free to open issues here in Github as necessary. Developers and users can also be found on IRC on the freenode network in the #terminix room.
         </div>
     </div>
 
     <!-- Footer
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <footer class="footer">
-        <div class="container clearfix">
+        <div class="clearfix">
             <div class="text-muted footer-left">
                 Designed and coded with love by <a href="https://github.com/bil-elmoussaoui">Bilal Elmoussaoui.</a>
             </div>
             <div class="text-muted footer-right">
-                Published by <a href="https://pages.github.com/">GitHub Pages</a> | <span class="scroll"><a href="#top">Back to top</a></span>
+                Published by <a href="https://pages.github.com/">GitHub Pages</a> | <a href="#top">Back to top</a>
             </div>
         </div>
     </footer>

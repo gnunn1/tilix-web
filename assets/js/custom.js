@@ -1,8 +1,11 @@
     $(function () {
         $('.scroll a').bind('click', function (event) {
-            var $anchor = $(this);
-            if ($($anchor.attr("href")).length) {
-                var element = $anchor.attr("href");
+            var $anchor = $(this).attr("href");
+            $anchor = $anchor.split("/").join("");
+            $anchor = $anchor.replace("terminix-web","");
+            $anchor = $anchor.replace("faq","");
+            if ($anchor.length) {
+                var element = $anchor;
             }
             else {
                 var element = "body";
@@ -38,12 +41,13 @@
             }
         });
         $(".tabs-content li[class='selected']").show();
-        $(".tabs-navigation li a").click(function(event){
+        $(".tabs-navigation li:not(.hamburger-button) a").click(function(event){
             $(".tabs-content li").hide();
             $(".tabs-navigation li").removeClass("selected");
             $(this).parent().addClass("selected");
             var tab_id = $(this).attr("data-content");
             $(".tabs-content li[data-content='" + tab_id + "']").show();
+            $("#tabs").removeClass("tabs-responsive");
             event.preventDefault();
         });
 
@@ -59,4 +63,14 @@
       }
 
       nav.classList.remove("responsive");
+    }
+
+    function packagestabs(){
+      var tabs = document.getElementById("tabs");
+      if ( !tabs.classList.contains("tabs-responsive") ) {
+          tabs.classList.add("tabs-responsive");
+          return;
+      }
+
+      tabs.classList.remove("tabs-responsive");
     }

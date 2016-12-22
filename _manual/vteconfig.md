@@ -1,6 +1,7 @@
 ---
 title: VTE Configuration
 id: vteconfig
+layout: default
 ---
 #### Background
 
