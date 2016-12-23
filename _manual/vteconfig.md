@@ -20,9 +20,11 @@ This means that on some Linux distributions vte.sh never gets executed and VTE l
 
 #### Fixing the issue
 
-Fortunately fixing this issue is quite easy, you can use one of the two options as follows:
+Fortunately fixing this issue is quite easy, you can do either of the two options below.
 
-* Update ```~.bashrc``` (or ```~.zshrc``` if you are using zsh) to execute vte.sh directly, this involves adding the following line at the end of the file.
+##### 1. Source vte.sh in bashrc
+
+Update ```~.bashrc``` (or ```~.zshrc``` if you are using zsh) to execute vte.sh directly, this involves adding the following line at the end of the file.
 ```
 if [[ $TERMINIX_ID ]]; then
         source /etc/profile.d/vte.sh
@@ -48,7 +50,8 @@ function custom_prompt() {
 PROMPT_COMMAND=`custom_prompt`
 ```
 
+##### 2. OR use a login shell
 
-* Enable the option in your Terminix Profile (under Preferences) to use a login shell, the screenshot below shows the option that needs to be checked.
+Enable the option in your Terminix Profile (under Preferences) to use a login shell, the screenshot below shows the option that needs to be checked.
 
 ![Profile - Command](http://gexperts.com/img/terminix/terminix_login_shell.png)
