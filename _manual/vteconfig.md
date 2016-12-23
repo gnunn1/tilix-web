@@ -20,7 +20,7 @@ This means that on some Linux distributions vte.sh never gets executed and VTE l
 
 #### Fixing the issue
 
-Fortunately fixing this issue is quite easy as follows:
+Fortunately fixing this issue is quite easy, you can use one of the two options as follows:
 
 * Update ```~.bashrc``` (or ```~.zshrc``` if you are using zsh) to execute vte.sh directly, this involves adding the following line at the end of the file.
 ```
