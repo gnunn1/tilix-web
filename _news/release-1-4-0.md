@@ -1,5 +1,5 @@
 ---
-title: New Release
+title: 1.4.0 New Release
 layout: post
 description: Terminix 1.4.0 released with improved preference/profile dialog, new features and many bug fixes.
 icon: fa-flask 
