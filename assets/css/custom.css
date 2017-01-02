@@ -4,6 +4,9 @@
     width: 100%;
     height: 60px;
 }
+pre {
+    overflow: auto;
+}
 
 .container .text-muted {
     margin: 20px 0
