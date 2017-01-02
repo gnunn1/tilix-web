@@ -13,6 +13,7 @@
 .bx-wrapper img {
   max-width: 100%;
   display: block;
+  margin: 0 auto;
 }
 .bxslider {
   margin: 0;

@@ -35,7 +35,9 @@
         });
         $('.my-slider').bxSlider({
           mode: 'fade',
-          auto: true
+          auto: true,
+          adaptiveHeight: true
+
         });
         $(".tabs-content li[class='selected']").show();
         $(".tabs-navigation li:not(.hamburger-button) a").click(function(event){
