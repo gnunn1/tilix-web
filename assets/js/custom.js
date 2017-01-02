@@ -33,13 +33,9 @@
             $(this).find('.one-third').css('min-height', max_height);
             max_height = 0;
         });
-        $('.my-slider').unslider({
-            autoplay: true
-            , infinite: true
-            , arrows: {
-                prev: '<a class="unslider-arrow prev"> Previous </a>'
-                , next: '<a class="unslider-arrow next">Next</a>'
-            }
+        $('.my-slider').bxSlider({
+          mode: 'fade',
+          auto: true
         });
         $(".tabs-content li[class='selected']").show();
         $(".tabs-navigation li:not(.hamburger-button) a").click(function(event){

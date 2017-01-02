@@ -15,5 +15,5 @@ cd ./terminix-web && jekyll serve
 Thanks to those projects that made this website possible:
 - [Skeleton](http://getskeleton.com/)
 - [Jekyll](https://jekyllrb.com/)
-- [Unslider](http://unslider.com/)
+- [bxSlider](http://bxslider.com/)
 - [Font Awesome](http://fontawesome.io/)

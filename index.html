@@ -29,8 +29,8 @@ layout: default
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="section categories">
         <h3 class="section-heading">Screenshots</h3>
-        <div class="my-slider">
-            <ul>
+        <div>
+            <ul class="my-slider">
             {% for image in site.static_files %}
                 {% if image.path contains 'images/gallery' %}
                 <li> <img class="u-max-full-width" src="{{site.baseurl}}{{image.path}}" alt="{{image.name | replace:'.png', ''}}"> </li>
