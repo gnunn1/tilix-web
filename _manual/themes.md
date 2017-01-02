@@ -7,7 +7,7 @@ layout: default
 
 Terminix supports themes for configuring the color scheme of the terminal, each theme is stored in a file. A theme file is a simple json file that specifies the color for each element as well as identifying whether certain colors should be used or defaulted. Here is an example of a theme file:
 
-{% highlight json linenos %}
+{% highlight json %}
 {
     "name": "Orchis",
     "comment": "Tango but using Orchis foreground/background colors",

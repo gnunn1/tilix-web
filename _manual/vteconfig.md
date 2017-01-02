@@ -25,30 +25,29 @@ Fortunately fixing this issue is quite easy, you can do either of the two option
 ##### 1. Source vte.sh in bashrc
 
 Update ```~.bashrc``` (or ```~.zshrc``` if you are using zsh) to execute vte.sh directly, this involves adding the following line at the end of the file.
-```
+{% highlight bash %}
 if [[ $TERMINIX_ID ]]; then
         source /etc/profile.d/vte.sh
 fi
-```
+{% endhighlight %}
 
 On Ubuntu (16.04), a symlink is probably missing. You can create it with: 
-```
+{% highlight bash %}
 ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
-```
-
-
+{% endhighlight %}
 If you use a custom `PROMPT_COMMAND` instead of simply overriding `PS1` you also
 need to update your `PROMPT_COMMAND` to append working directory information.
 This can be achieved by calling `__vte_osc7` which gets defined when you source
 `/etc/profile.d/vte-2.91.sh`.
-```
+
+{% highlight bash %}
 function custom_prompt() {
   __git_ps1 "\[\033[0;31m\]\u \[\033[0;36m\]\h:\w\[\033[00m\]" " \n\[\033[0;31m\]>\[\033[00m\] " " %s"
   VTE_PWD_THING="$(__vte_osc7)"
   PS1="$PS1$VTE_PWD_THING"
 }
 PROMPT_COMMAND=`custom_prompt`
-```
+{% endhighlight %}
 
 ##### 2. OR use a login shell
 

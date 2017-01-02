@@ -4,6 +4,9 @@
     width: 100%;
     height: 60px;
 }
+figure.highlight{
+    margin:6px 0;
+}
 pre, code {
     overflow: auto;
 }
@@ -14,6 +17,8 @@ pre{
 	white-space: -o-pre-wrap;  
 	word-wrap: break-word;   
 	width: 99%; 
+    margin:0;
+
 }
 
 .container .text-muted {

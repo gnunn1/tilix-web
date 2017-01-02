@@ -9,9 +9,9 @@ Terminix supports running in a _Quake_-style mode where it appears at the top of
 
 When you register the hot key, simply bind it to the following command:
 
-```
+{% highlight bash %}
 terminix --quake
-```
+{% endhighlight %}
 
 When Terminix is run with the `--quake` switch, it will check if a quake style window is already running and if so simply toggle the window's visibility. If no quake style window has been created, then Terminix will create one and display it.
 
