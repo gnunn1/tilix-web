@@ -6,7 +6,8 @@ layout: default
 
  <div class="section">
     {% if site.news != empty %}
-	    {% for news in site.news %}
+        {% assign ordered_news = site.news | sort: 'date' %}
+	    {% for news in ordered_news reversed %}
 	        {% assign loopindex = forloop.index | modulo: 3 %}
 	        {% if loopindex == 1 %}
 	        <div class="row">
