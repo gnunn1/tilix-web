@@ -6,6 +6,7 @@ icon: fa-flask
 date: 2017-01-01 00:00:00 +0100
 ---
 
+![]({{site.baseurl}}/assets/images/gallery/terminix-screenshot1-2.png)
 
 Terminix is now just over a year old with my first commit in [Github](https://github.com/gnunn1/terminix) logged on the 29th of December 2015. Since then the project has seen almost 1,500 commits, 52 contributors and been starred almost 900 times in Github. Terminix is currently the [second](https://github.com/search?l=D&q=stars%3A%3E1&s=stars&type=Repositories) most starred D language project on Github. It’s been packaged, either officially or unofficially, for most of the major Linux distributions including Arch, Debian, Ubuntu, Fedora and OpenSUSE.
 
