@@ -16,6 +16,10 @@ layout: default
 	        <i class="fa {{ news.icon }} fa-5x" aria-hidden="true"></i>
 	        <h5 class="value-multiplier"><a href="{{site.baseurl}}{{news.id}}">{{news.title}}</a></h5>
 	          <p>{{ news.description }}</p>
+            <small class="u-pull-bottom">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    {{ news.date | date: "%b %-d, %Y" }}
+            </small>
 	        </div>
 	        {% if loopindex == 0 %}
 	        </div>

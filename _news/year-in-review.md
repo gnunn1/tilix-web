@@ -2,7 +2,7 @@
 title: Terminix Year in Review
 layout: post
 description: A look back accomplishments, highlights and lowlights of the past year plus goals for 2017
-icon: fa-flask 
+icon: fa-comment-o
 date: 2017-01-01 00:00:00 +0100
 ---
 

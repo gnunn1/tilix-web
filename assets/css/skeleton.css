@@ -555,6 +555,10 @@ form {
 .u-pull-right {
     float: right;
 }
+.u-pull-bottom {
+    bottom:0;
+    position: absolute;
+}
 
 .u-pull-left {
     float: left;
