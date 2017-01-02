@@ -4,7 +4,7 @@
     width: 100%;
     height: 60px;
 }
-pre {
+pre, code {
     overflow: auto;
     white-space: pre-wrap;                
 	white-space: -moz-pre-wrap !important;
