@@ -4,6 +4,7 @@
             $anchor = $anchor.split("/").join("");
             $anchor = $anchor.replace("terminix-web","");
             $anchor = $anchor.replace("faq","");
+            $anchor = $anchor.replace("manual","");
             if ($anchor.length) {
                 var element = $anchor;
             }
