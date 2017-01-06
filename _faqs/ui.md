@@ -28,31 +28,6 @@ Making scrollbars transparent requires CSS specific to that theme. At this time 
 
 That comes from [powerline](https://github.com/powerline/powerline) and is not something Terminix provides.
 
-##### What variables are supported in custom terminal titles?
-
-The following variables are supported:
-
-Variable | Description
--------|------------
-${title} | The title of the terminal
-${iconTitle} | The icon title of the terminal
-${id} | The numeric terminal ID (i.e. 1,2,3,4)
-${directory} | The current working directory in the terminal
-${columns} | The number of columns in the terminal
-${rows} | the number of rows in the terminal
-${hostname} | the hostname of the current session, availability dependent on the VTE script being configured on remote systems or triggers
-${username} | the current username, requires trigger support and an appropriate trigger be configured
-
-##### What variables are supported in custom application titles?
-
-The following variables are supported:
-
-Variable | Description
--------|------------
-${appName} | The name of the application, i.e. Terminix
-${sessionName} | The name of the session
-${sessionNumber} | The number of the session, i.e. session 2 out of 4 active
-
 ##### I set a background image in preferences but it is not visible, how do I fix this?
 
 Background images requires transparency to work, in order to view the background image you need to adjust the transparency slider in the appropriate profile.
