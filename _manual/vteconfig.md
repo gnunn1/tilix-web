@@ -26,7 +26,7 @@ Fortunately fixing this issue is quite easy, you can do either of the two option
 
 Update ```~.bashrc``` (or ```~.zshrc``` if you are using zsh) to execute vte.sh directly, this involves adding the following line at the end of the file.
 {% highlight bash %}
-if [[ $TERMINIX_ID ]]; then
+if [ $TERMINIX_ID ] || [$VTE_VERSION]; then
         source /etc/profile.d/vte.sh
 fi
 {% endhighlight %}
