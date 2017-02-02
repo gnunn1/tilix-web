@@ -4,6 +4,7 @@ layout: post
 description: Terminix 1.4.2 bugfix release
 icon: fa-flask 
 date: 2016-12-29 00:00:00 +0100
+author: Gerald Nunn
 ---
 
 Terminix 1.4.2 has been released to fix a few remaining issues with 1.4.0, the following changes were made in this release:

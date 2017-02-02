@@ -16,22 +16,17 @@
             }, 600, 'easeInOutExpo');
             event.preventDefault();
         });
+        $(window).load(function(){ 
+            respnosiveRows();
+        });
+        $(window).resize(function() {
+            respnosiveRows();
+        });
         $("a[href='#top']").click(function () {
             $("html, body").animate({
                 scrollTop: 0
             }, "slow");
             return false;
-        });
-         $('.row').each(function (index) {
-            var max_height = 0;
-            $(this).find('.one-third').each(function (index) {
-                if($(this).outerHeight() > max_height)
-              {
-                max_height = $(this).outerHeight();
-              }          
-             });
-            $(this).find('.one-third').css('min-height', max_height);
-            max_height = 0;
         });
         $('.my-slider').bxSlider({
           mode: 'fade',
@@ -51,6 +46,31 @@
         });
 
     });
+    
+    function respnosiveRows(){
+        width = $(window).width();
+        $('.row').find('.one-third').each(function (index) {
+            if(width <= 550){
+                $(this).addClass('responsive');
+            } else {
+                $(this).removeClass('responsive');
+            }
+        });
+        $('.row').each(function (index) {
+            var max_height = 0;
+            $(this).find('.one-third').each(function (index) {
+                $(this).css('min-height', 0);
+                if($(this).outerHeight() > max_height)
+                  {
+                    max_height = $(this).outerHeight();
+                  }          
+             });
+            if(!$(this).find('.one-third').hasClass('responsive')){
+                $(this).find('.one-third').css('min-height', max_height);
+            }
+            max_height = 0;
+        });
+    }
 
     /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
     function navbar() {

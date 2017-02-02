@@ -12,14 +12,16 @@ layout: default
 	        {% if loopindex == 1 %}
 	        <div class="row">
 	        {% endif %}
-	        <div class="one-third column value">
+	        <div class="one-third column value news-row">
 	        <i class="fa {{ news.icon }} fa-5x" aria-hidden="true"></i>
 	        <h5 class="value-multiplier"><a href="{{site.baseurl}}{{news.id}}">{{news.title}}</a></h5>
-	          <p>{{ news.description }}</p>
-            <small class="u-pull-bottom">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                    {{ news.date | date: "%b %-d, %Y" }}
-            </small>
+	          <div class="news-description"><p>{{ news.description }}</p></div>
+                <span class="br"><br></span>
+                <small class="news-info">
+                    <span class="author"><i class="fa fa-user-o" aria-hidden="true"></i> {{ news.author }}&nbsp;&nbsp;</span>
+                    <span class="br"></span>
+                    <span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;{{ news.date | date: "%b %-d, %Y" }}</span>
+                </small>
 	        </div>
 	        {% if loopindex == 0 %}
 	        </div>
