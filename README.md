@@ -6,7 +6,11 @@ Website for the Terminix project
 ```bash
 git clone https://github.com/gnunn1/terminix-web/
 ```
-2- Go the cloned directory and run Jekyll server
+2- Install `jekyll` and `jekyll-paginate`
+```bash
+gem install jekyll jekyll-paginate
+```
+3- Go the cloned directory and run Jekyll server
 ```bash
 cd ./terminix-web && jekyll serve
 ```

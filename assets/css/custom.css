@@ -20,6 +20,9 @@ pre{
     margin:0;
 
 }
+.pagination{
+    margin-top:10px;
+}
 
 .container .text-muted {
     margin: 20px 0

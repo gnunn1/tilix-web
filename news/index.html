@@ -1,12 +1,10 @@
 ---
-permalink: /news/
 title: Terminix&colon; News
 layout: default
 ---
-
  <div class="section">
-    {% if site.news != empty %}
-        {% assign ordered_news = site.news | sort: 'date' %}
+    {% if paginator.posts != empty %}
+        {% assign ordered_news = paginator.posts | sort: 'date' %}
 	    {% for news in ordered_news reversed %}
 	        {% assign loopindex = forloop.index | modulo: 3 %}
 	        {% if loopindex == 1 %}
@@ -27,6 +25,21 @@ layout: default
 	        </div>
 	        {% endif %}
 	    {% endfor %}
+		{% assign news_total = paginator.posts.size | modulo: 3 %} 
+		{% if news_total != 0%}
+		</div>
+		{% endif %}
+		{% if paginator.total_pages > 1 %}
+			<div class="pagination">
+				{% if paginator.previous_page %}
+					<a class="button" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+				{% endif %}
+
+				{% if paginator.next_page %}
+					<a class="button" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+				{% endif %}
+			</div>
+		{% endif %}
   	{% else %}
   		<h1>No news at the moment... </h1>
 	{% endif %}
