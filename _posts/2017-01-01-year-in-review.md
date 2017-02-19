@@ -4,6 +4,7 @@ layout: post
 description: A look back accomplishments, highlights and lowlights of the past year plus goals for 2017
 icon: fa-comment-o
 date: 2017-01-01 00:00:00 +0100
+author: Gerald Nunn
 ---
 
 ![]({{site.baseurl}}/assets/images/gallery/terminix-screenshot1-2.png)
@@ -62,5 +63,3 @@ Here’s my goals for 2017:
 * Attract someone with C skills to work on VTE patches to support the afore-mentioned features where it is required.
 
 Well that’s it for the year in review, it’s been a fun ride so far and I look forward to what 2017 brings. Thanks to everyone who participated in Terminix development so far, we couldn’t have made it this far without you.
-
-Gerald Nunn

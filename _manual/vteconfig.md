@@ -26,12 +26,12 @@ Fortunately fixing this issue is quite easy, you can do either of the two option
 
 Update ```~.bashrc``` (or ```~.zshrc``` if you are using zsh) to execute vte.sh directly, this involves adding the following line at the end of the file.
 {% highlight bash %}
-if [[ $TERMINIX_ID ]]; then
+if [ $TERMINIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
 {% endhighlight %}
 
-On Ubuntu (16.04), a symlink is probably missing. You can create it with: 
+On Ubuntu (16.04 or 16.10), a symlink is probably missing. You can create it with: 
 {% highlight bash %}
 ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
 {% endhighlight %}

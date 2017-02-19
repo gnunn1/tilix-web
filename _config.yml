@@ -6,6 +6,12 @@ description: > # this means to ignore newlines until "baseurl:"
   Terminix is an advanced GTK3 tiling terminal for Linux based 
   on the Gnome Human Interface Guidelines (HIG).
 
+gems: [jekyll-paginate]
+# Number of articles per page
+paginate: 9
+paginate_path: "/news/page:num/"
+
+
 sass:
   sass_dir: assets/sass
   style: :compressed
@@ -21,6 +27,3 @@ collections:
   manual:
     output: true
     permalink: /manual/:path/
-  news:
-    output: true
-    permalink: /news/:path/

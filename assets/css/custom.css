@@ -20,6 +20,9 @@ pre{
     margin:0;
 
 }
+.pagination{
+    margin-top:10px;
+}
 
 .container .text-muted {
     margin: 20px 0
@@ -62,7 +65,24 @@ pre{
     margin: 0 auto
 }
 
-/* Style the list */
+.news-row {
+    position: relative;
+}
+.one-third:not(.responsive) .news-info  {
+    bottom: 0;
+    position: absolute;
+}
+.one-third .br {
+    display: none;
+}
+@media only screen and (max-width: 750px) and (min-width: 550px) {
+    .one-third .br{
+        display: block;
+    }
+    .news-row .description{
+        margin-bottom: 3px;
+    }
+}
 
 .tabs ul.tabs-navigation {
     list-style-type: none;

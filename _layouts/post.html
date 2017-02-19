@@ -7,10 +7,10 @@
   {% include navbar.html %}
   <main class="main" aria-label="Content">
   	<div class="container">
-  	<h1>{{page.title}}</h1>		
+  	<h1><i class="fa  {{ page.icon }}" aria-hidden="true"></i>&nbsp;{{page.title}}</h1>
+    <i class="fa fa-user-o" aria-hidden="true"></i> {{ page.author }} &nbsp;&nbsp;<i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;{{ page.date | date: "%b %-d, %Y" }}
+    <br/> <br/>
     {{ content }}
-  	<small class="u-pull-right"><i class="fa fa-calendar" aria-hidden="true"></i>{{ page.date | date: "%b %-d, %Y" }}</small>
-
     </div>
   </main>
 
