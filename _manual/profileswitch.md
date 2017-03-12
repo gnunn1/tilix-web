@@ -5,7 +5,7 @@ layout: default
 ---
 ### Introduction
 
-Terminix supports automatically switching profiles based on certain conditions which is useful in a variety of situations such as when switching users, connecting to different hosts, changing to sensitive directories, etc. At the moment Terminix supports triggering a profile change based on the following:
+Tilix supports automatically switching profiles based on certain conditions which is useful in a variety of situations such as when switching users, connecting to different hosts, changing to sensitive directories, etc. At the moment Tilix supports triggering a profile change based on the following:
 
 * username
 * hostname
@@ -15,7 +15,7 @@ Note that when an automatic profile change is active, the menu to switch to diff
 
 ### Local Configuration
 
-Configuring profile switching in Terminix is done in the Advanced tab of the profile settings. Here you can configure the list of usernames, hostnames and directories that will trigger the profile change. The format used for the string is ```username@hostname:directory``` where either username, hostname or directory can be omitted but not all. Also at least one delimiter, either *@* or *:*, is also required to indicate which string is being represented.
+Configuring profile switching in Tilix is done in the Advanced tab of the profile settings. Here you can configure the list of usernames, hostnames and directories that will trigger the profile change. The format used for the string is ```username@hostname:directory``` where either username, hostname or directory can be omitted but not all. Also at least one delimiter, either *@* or *:*, is also required to indicate which string is being represented.
 
 Note that switching profiles based on username requires the use of a trigger to extract the username from the terminal output text.
 

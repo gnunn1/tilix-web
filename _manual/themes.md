@@ -5,7 +5,7 @@ layout: default
 ---
 ### Themes
 
-Terminix supports themes for configuring the color scheme of the terminal, each theme is stored in a file. A theme file is a simple json file that specifies the color for each element as well as identifying whether certain colors should be used or defaulted. Here is an example of a theme file:
+Tilix supports themes for configuring the color scheme of the terminal, each theme is stored in a file. A theme file is a simple json file that specifies the color for each element as well as identifying whether certain colors should be used or defaulted. Here is an example of a theme file:
 
 {% highlight json %}
 {
@@ -43,6 +43,6 @@ Terminix supports themes for configuring the color scheme of the terminal, each 
 }
 {% endhighlight %}
 
-Themes are loaded from one of two places by Terminix. The first is ```/usr/share/terminix/schemes```, these are the themes that are shipped with Terminix. The second place that Terminix looks for theme files is in the user home directory, specifically ```~/.config/terminix/schemes```. Users can place any custom themes they want to use here.
+Themes are loaded from one of two places by Tilix. The first is ```/usr/share/terminix/schemes```, these are the themes that are shipped with Tilix. The second place that Tilix looks for theme files is in the user home directory, specifically ```~/.config/terminix/schemes```. Users can place any custom themes they want to use here.
 
-While Terminix only includes a small number of themes, additional themes can be easily downloaded and installed. The GitHub repository [Terminix-Themes](https://github.com/storm119/Terminix-Themes) has a wide variety of pre-built themes to choose from.
+While Tilix only includes a small number of themes, additional themes can be easily downloaded and installed. The GitHub repository [Tilix-Themes](https://github.com/storm119/Tilix-Themes) has a wide variety of pre-built themes to choose from.

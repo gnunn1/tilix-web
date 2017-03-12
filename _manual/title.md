@@ -5,7 +5,7 @@ layout: default
 ---
 ### Titles
 
-Terminix support using variables in the various titles and names it allows to be configured. This enables the title to better reflect the current state of the application, session or currently focused terminal. Variables can be used in the following locations:
+Tilix support using variables in the various titles and names it allows to be configured. This enables the title to better reflect the current state of the application, session or currently focused terminal. Variables can be used in the following locations:
 
 * Window title
 * Session name
@@ -29,6 +29,6 @@ The following additional variables are supported in all titles except terminal t
 
 Variable | Description
 -------|------------
-${appName} | The name of the application, i.e. Terminix
+${appName} | The name of the application, i.e. Tilix
 ${sessionName} | The name of the session
 ${sessionNumber} | The number of the session, i.e. session 2 out of 4 active
