@@ -1,9 +1,9 @@
-baseurl: "/terminix-web"
+baseurl: "/tilix-web"
 
-title: Terminix &colon; A tiling terminal emulator
+title: Tilix &colon; A tiling terminal emulator
 author: Gerald Nunn
 description: > # this means to ignore newlines until "baseurl:"
-  Terminix is an advanced GTK3 tiling terminal for Linux based 
+  Tilix is an advanced GTK3 tiling terminal for Linux based 
   on the Gnome Human Interface Guidelines (HIG).
 
 gems: [jekyll-paginate]
