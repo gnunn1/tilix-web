@@ -23,10 +23,10 @@ Note that switching profiles based on username requires the use of a trigger to 
 
 To enable profile changes when using SSH to connect to remote systems, the remote system must be configured to include an additional script or an appropriate trigger configured. 
 
-If you opt for the script, first scp the script ```/usr/share/terminix/scripts/terminix_int.sh``` from your local system where terminix is installed to the remote system. You will then need to source this script on the remote system, the easiest way to do this is to modify the .bashrc of the user you use to connect to include the script. For example, add the following to .bashrc:
+If you opt for the script, first scp the script ```/usr/share/tilix/scripts/tilix_int.sh``` from your local system where tilix is installed to the remote system. You will then need to source this script on the remote system, the easiest way to do this is to modify the .bashrc of the user you use to connect to include the script. For example, add the following to .bashrc:
 
 {% highlight bash %}
-. ./terminix_int.sh
+. ./tilix_int.sh
 {% endhighlight %}
 
 if you switch users on the remote system, you may need to source the script somewhere so it is available to all users.

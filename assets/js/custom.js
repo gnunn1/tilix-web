@@ -2,7 +2,7 @@
         $('.scroll a').bind('click', function (event) {
             var $anchor = $(this).attr("href");
             $anchor = $anchor.split("/").join("");
-            $anchor = $anchor.replace("terminix-web","");
+            $anchor = $anchor.replace("tilix-web","");
             $anchor = $anchor.replace("faq","");
             $anchor = $anchor.replace("manual","");
             if ($anchor.length) {

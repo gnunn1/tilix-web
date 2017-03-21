@@ -5,11 +5,11 @@ layout: default
 ---
 #### Introduction
 
-Tilix supports the use of command line actions to have the running instance execute an action that you would typically do through the user interface. The use case for this functionality is to be able run a script within terminix that causes it to perform certain commands. For example, to have Tilix run the command ```yaourt -Syua``` in a new terminal that is split right, the following command can be used:
+Tilix supports the use of command line actions to have the running instance execute an action that you would typically do through the user interface. The use case for this functionality is to be able run a script within tilix that causes it to perform certain commands. For example, to have Tilix run the command ```yaourt -Syua``` in a new terminal that is split right, the following command can be used:
 
 
 {% highlight bash %}
-terminix -a session-add-right -x "yaourt -Syua"
+tilix -a session-add-right -x "yaourt -Syua"
 {% endhighlight %}
 
 The -a, or --action, command line switch is what is used to specify the action to be executed. Any action executed is always done relative to the terminal where the command was executed. Any command line parameters that are specified as part of the command get passed to the new terminal. This allows you to do a variety of things such as use a different profile, specify the working directory or as per the example above, execute a command.
