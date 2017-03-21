@@ -53,4 +53,4 @@ PROMPT_COMMAND=`custom_prompt`
 
 Enable the option in your Tilix Profile (under Preferences) to use a login shell, the screenshot below shows the option that needs to be checked.
 
-![Profile - Command](http://gexperts.com/img/tilix/tilix_login_shell.png)
+![Profile - Command](https://gnunn1.github.io/tilix-web/assets/images/manual/tilix_login_shell.png)
