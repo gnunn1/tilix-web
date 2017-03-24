@@ -26,7 +26,7 @@ Fortunately fixing this issue is quite easy, you can do either of the two option
 
 Update ```~.bashrc``` (or ```~.zshrc``` if you are using zsh) to execute vte.sh directly, this involves adding the following line at the end of the file.
 {% highlight bash %}
-if [ $TERMINIX_ID ] || [ $VTE_VERSION ]; then
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
 {% endhighlight %}
@@ -53,4 +53,4 @@ PROMPT_COMMAND=`custom_prompt`
 
 Enable the option in your Tilix Profile (under Preferences) to use a login shell, the screenshot below shows the option that needs to be checked.
 
-![Profile - Command](http://gexperts.com/img/terminix/terminix_login_shell.png)
+![Profile - Command](https://gnunn1.github.io/tilix-web/assets/images/manual/tilix_login_shell.png)
