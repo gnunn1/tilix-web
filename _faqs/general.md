@@ -12,10 +12,19 @@ My background is in Java and J2EE and while I do some Python programming (via Jy
 
 ##### How can I make Tilix my default terminal?
 
-Run in terminal:
+For debian distributions you can run the following in a terminal:
 
 ```
 sudo update-alternatives --config x-terminal-emulator
 ```
 
-Then pick Tilix from menu
+And then pick Tilix from menu.
+
+##### Disable DBus Activation
+
+Tilix has DBus activation enabled in te launcher. While for the vast majority of users this does not cause any issues, there have been a few edge cases found in rare situations such as the one identified [here](https://github.com/gnunn1/tilix/issues/870). If you are having this or an issue where the behavior of Tilix is subtlely different then Gnome Terminal, you can try to disable DBus Activation.
+
+To do so, follow these instructions:
+
+* Modify the ```/usr/share/applications/com.gexperts.Tilix.desktop``` file and change the line ```DBusActivatable=true``` to be ```DBusActivatable=false```
+* Log out and back in again
