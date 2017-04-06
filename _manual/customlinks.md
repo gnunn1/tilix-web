@@ -3,7 +3,7 @@ title: Custom Hyperlinks
 id: customlinks
 layout: default
 ---
-Tilix allows customer hyperlinks to be defined using regular expressions. These links can then be clicked on to launch an application.
+Tilix allows custom hyperlinks to be defined using regular expressions. These links can then be clicked on to launch an application passing information from the match to the application.
 
 When configuring the application to be launched, the token ```$0``` can be used to represent the match obtained from the regular expression. If the regular expression includes groups then ```$1``` is the first group, ```$2``` the second group, etc.
 
