@@ -22,7 +22,7 @@ And then pick Tilix from menu.
 
 ##### How can I disable DBus Activation?
 
-Tilix has DBus activation enabled in te launcher. While for the vast majority of users this does not cause any issues, there have been a few edge cases found in rare situations such as the one identified [here](https://github.com/gnunn1/tilix/issues/870). If you are having this or an issue where the behavior of Tilix is subtlely different then Gnome Terminal, you can try to disable DBus Activation.
+Tilix has DBus activation enabled in the launcher. While for the vast majority of users this does not cause any issues, there have been a few edge cases found in rare situations such as the one identified [here](https://github.com/gnunn1/tilix/issues/870). If you are having this or an issue where the behavior of Tilix is subtlely different then Gnome Terminal, you can try to disable DBus Activation.
 
 To do so, follow these instructions:
 
