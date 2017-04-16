@@ -12,7 +12,7 @@ Tilix supports the use of command line actions to have the running instance exec
 tilix -a session-add-right -x "yaourt -Syua"
 {% endhighlight %}
 
-The -a, or --action, command line switch is what is used to specify the action to be executed. Any action executed is always done relative to the terminal where the command was executed. Any command line parameters that are specified as part of the command get passed to the new terminal. This allows you to do a variety of things such as use a different profile, specify the working directory or as per the example above, execute a command.
+The ```-a```, or ```--action```, command line switch is what is used to specify the action to be executed. Any action executed is always done relative to the terminal where the command was executed. Any command line parameters that are specified as part of the command get passed to the new terminal. This allows you to do a variety of things such as use a different profile, specify the working directory or as per the example above, execute a command.
 
 #### Supported Actions
 
