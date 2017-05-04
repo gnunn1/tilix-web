@@ -17,7 +17,7 @@ Note that when an automatic profile change is active, the menu to switch to diff
 
 Configuring profile switching in Tilix is done in the Advanced tab of the profile settings. Here you can configure the list of usernames, hostnames and directories that will trigger the profile change. The format used for the string is ```username@hostname:directory``` where either username, hostname or directory can be omitted but not all. Also at least one delimiter, either *@* or *:*, is also required to indicate which string is being represented.
 
-Note that switching profiles based on username requires the use of a trigger to extract the username from the terminal output text.
+**Note** that switching profiles based on username requires the use of a trigger to extract the username from the terminal output text. Triggers in turn require a patched VTE, see the [Triggers](https://gnunn1.github.io/tilix-web/manual/triggers/) page for more information.
 
 ### Remote Configuration
 
