@@ -5,3 +5,122 @@ img {
 	max-width:100%;
 	display:block;
 }
+
+
+figure {
+  &.highlight{
+      margin:6px 0;
+  }
+}
+pre, code {
+    overflow: auto;
+}
+pre{
+  white-space: pre-wrap;
+	white-space: -moz-pre-wrap !important;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	width: 99%;
+  margin:0;
+}
+
+
+
+#contribute {
+    .icon {
+        float: left;
+        width: 20%;
+        text-align: center;
+        margin: 5px 10px;
+    }
+    .description {
+        text-align: justify;
+    }
+    @media only screen and (max-width: 750px) and (min-width: 550px) {
+      .icon {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+}
+
+.footer {
+  margin-top: 20px;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  padding: 12px;
+
+  .footer-left {
+    float: left
+  }
+  .footer-right {
+    float:right;
+  }
+}
+
+
+// Change skeleton default behavior
+.one-third {
+    &:not(.responsive) .news-info {
+      bottom: 0;
+      position: absolute;
+    }
+    .br {
+      display: none;
+    }
+    @media only screen and (max-width: 750px) and (min-width: 550px) {
+      .br {
+        display: block;
+      }
+    }
+}
+
+.pagination{
+    margin-top:10px;
+}
+
+
+
+.news-row {
+    position: relative;
+    @media only screen and (max-width: 750px) and (min-width: 550px) {
+      .description{
+          margin-bottom: 3px;
+      }
+    }
+}
+.container .text-muted {
+    margin: 20px 0
+}
+
+
+// Few simple but useful classes
+.float-left {
+  float: left;
+  margin: 10px;
+}
+
+.float-right {
+  float: right
+}
+
+.clearfix:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both
+}
+
+.center-big-boss {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.center {
+  width: 100%;
+  margin: 0 auto
+}

@@ -5,9 +5,9 @@
 @charset "UTF-8";
 
 @import
-        "abstracts/variables",
-
+        "skeleton",
         "base/base",
-
-        "partials/navbar"
+        "modules/navbar",
+        "modules/tabs",
+        "plugins/bxslider"
 ;

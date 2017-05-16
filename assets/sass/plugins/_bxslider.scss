@@ -1,0 +1,170 @@
+.bx-wrapper {
+  position: relative;
+  margin: 0 auto 60px;
+  padding: 0;
+  *zoom: 1;
+  touch-action: pan-y;
+  box-shadow: 0 0 5px $bxslider;
+  border: 5px solid $bxslider-border-bg;
+  background: $bxslider-bg;
+  img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .bx-pager,
+  .bx-controls-auto {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+  }
+  .bx-loading {
+    min-height: 50px;
+    background: url('../images/bx_loader.gif') center center no-repeat #ffffff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+  }
+  .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: $bxslider-pager;
+    padding-top: 20px;
+
+    .bx-default-pager {
+      a {
+        background: $bxslider-pager;
+        text-indent: -9999px;
+        display: block;
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        outline: 0;
+        border-radius: 5px;
+        &:hover,
+        &.active,
+        &:focus {
+          background: #000;
+        }
+      }
+    }
+  }
+  .bx-pager-item,
+  .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+  }
+  .bx-pager-item {
+    font-size: 0;
+    line-height: 0;
+  }
+  .bx-prev {
+    left: 10px;
+    background: url('../images/controls.png') no-repeat 0 -32px;
+    &:hover,
+    &:focus {
+      background-position: 0 0;
+    }
+  }
+  .bx-next {
+    right: 10px;
+    background: url('../images/controls.png') no-repeat -43px -32px;
+    &:hover,
+    &:focus {
+      background-position: -43px 0;
+    }
+  }
+  .bx-controls-direction {
+    a {
+      position: absolute;
+      top: 50%;
+      margin-top: -16px;
+      outline: 0;
+      width: 32px;
+      height: 32px;
+      text-indent: -9999px;
+      z-index: 9999;
+      &.disabled {
+        display: none;
+      }
+    }
+  }
+  .bx-controls-auto {
+    text-align: center;
+    .bx-start {
+      display: block;
+      text-indent: -9999px;
+      width: 10px;
+      height: 11px;
+      outline: 0;
+      background: url('../images/controls.png') -86px -11px no-repeat;
+      margin: 0 3px;
+      &:hover,
+      &.active,
+      &:focus {
+        background-position: -86px 0;
+      }
+    }
+    .bx-stop {
+      display: block;
+      text-indent: -9999px;
+      width: 9px;
+      height: 11px;
+      outline: 0;
+      background: url('../images/controls.png') -86px -44px no-repeat;
+      margin: 0 3px;
+      &:hover,
+      &.active,
+      &:focus {
+        background-position: -86px -33px;
+      }
+    }
+  }
+  /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+  .bx-controls.bx-has-controls-auto {
+    .bx-has-pager {
+      .bx-pager {
+        text-align: left;
+        width: 80%;
+      }
+      .bx-controls-auto {
+        right: 0;
+        width: 35px;
+      }
+    }
+  }
+  /* IMAGE CAPTIONS */
+  .bx-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $bxslider-caption-bg;
+    width: 100%;
+    span {
+      color: $bxslider-caption-color;
+      font-family: Arial;
+      display: block;
+      font-size: .85em;
+      padding: 10px;
+    }
+  }
+}
+
+.bxslider {
+  margin: 0;
+  padding: 0;
+}
+
+ul.bxslider {
+  list-style: none;
+}
+
+.bx-viewport {
+  transform: translatez(0);
+}
