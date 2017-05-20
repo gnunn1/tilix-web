@@ -2,7 +2,7 @@
 title: Badges
 id: badges
 layout: manual
-description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia finibus ullamcorper. Fusce dictum sagittis eros nec interdum. Ut et posuere leo. Morbi at augue quis augue convallis euismod ac et dui. 
+description:  Badges are displayed in the background of a terminal and can display a variety of information about the terminal session. 
 ---
 *Note that badges requires that the GTK VTE widget be built with a tilix specific [patch](https://github.com/gnunn1/tilix/blob/master/experimental/vte/alternate-screen.patch), otherwise badges are disabled. Arch users can access this functionality by installing the [vte3-terminix-git](https://aur.archlinux.org/packages/vte3-terminix-git) package.*
 
