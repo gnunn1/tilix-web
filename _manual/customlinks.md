@@ -2,7 +2,7 @@
 title: Custom Hyperlinks
 id: customlinks
 layout: manual
-description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia finibus ullamcorper. Fusce dictum sagittis eros nec interdum. Ut et posuere leo. Morbi at augue quis augue convallis euismod ac et dui. 
+description:  Like many terminals, Tilix allows clicking on a specific content to perform actions. For example, clicking on a hyperlink opens it in teh browser. Tilix takes this a step further and allows the user to define custom links and actions based on regular expressions.
 ---
 Tilix allows custom hyperlinks to be defined using regular expressions. These links can then be clicked on to launch an application passing information from the match to the application.
 
