@@ -2,7 +2,7 @@
 title: Automatic Profile Switching
 id: profileswitch
 layout: manual
-description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia finibus ullamcorper. Fusce dictum sagittis eros nec interdum. Ut et posuere leo. Morbi at augue quis augue convallis euismod ac et dui. 
+description:  Automatically switching profiles based on certain conditions which is useful in a variety of situations such as when switching users, connecting to different hosts or changing to sensitive directories. 
 ---
 #### Introduction
 
