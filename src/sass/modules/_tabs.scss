@@ -1,0 +1,95 @@
+.tabs ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  &.tabs-navigation {
+    background-color: $tab-bg;
+    border: 1px solid #DADFE1;
+    border-bottom: none;
+
+    li {
+      margin: 0;
+      padding: 5px 10px;
+      a {
+          color: white;
+          font-size: 12px;
+          cursor: pointer;
+          font-weight: 600;
+          line-height: 38px;
+          letter-spacing: .1rem;
+          text-transform: uppercase;
+          text-decoration: none;
+          white-space: nowrap;
+      }
+      &.hamburger-button {
+        display: none;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 720px){
+    &.tabs-navigation {
+      li {
+        display: block;
+        float:left;
+
+        &:hover, &:focus {
+          background-color: $dark-grey;
+        }
+        &.selected {
+          background-color: white;
+          a {
+            color: $tab-bg;
+            text-shadow: 1px $tab-bg;
+          }
+        }
+        &.hamburger-button {
+            display: none;
+        }
+      }
+
+    }
+  }
+
+  &.tabs-responsive {
+    li {
+      &:not(.selected) {
+        display: none;
+      }
+      &.hamburger-button {
+        float: right;
+        display: inline-block;
+      }
+      &.selected {
+        float: left;
+      }
+    }
+  }
+  /* Style the tab content */
+  &.tabs-content {
+    li {
+      list-style-type: none;
+      display: none;
+      padding: 10px 16px;
+      text-align: justify;
+      border: 1px solid #DADFE1;
+      border-top: none;
+      animation: fadeEffect 1s;
+      /* Fading effect takes 1 second */
+    }
+  }
+}
+
+
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

@@ -36,6 +36,7 @@
 
       &.hamburger-button {
         display: none;
+        float:right;
       }
 
       @media screen and (max-width: 750px) {
@@ -49,7 +50,6 @@
         }
 
         &.hamburger-button {
-          float: right;
           display: inline-block;
         }
 

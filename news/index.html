@@ -1,8 +1,8 @@
 ---
-title: Tilix&colon; News
+title: News
 layout: default
 ---
- <div class="section">
+ <div class="section" id="news">
     {% if paginator.posts != empty %}
         {% assign ordered_news = paginator.posts | sort: 'date' %}
 	    {% for news in ordered_news reversed %}
@@ -25,7 +25,7 @@ layout: default
 	        </div>
 	        {% endif %}
 	    {% endfor %}
-		{% assign news_total = paginator.posts.size | modulo: 3 %} 
+		{% assign news_total = paginator.posts.size | modulo: 3 %}
 		{% if news_total != 0%}
 		</div>
 		{% endif %}

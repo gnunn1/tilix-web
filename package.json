@@ -1,0 +1,27 @@
+{
+  "name": "tilix-web",
+  "version": "1.0.0",
+  "description": "Tilix terminal website",
+  "keywords": [
+    "Tilix",
+    "terminal",
+    "emulator",
+    "VTE",
+    "website"
+  ],
+  "author": "Bilal Elmoussaoui",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/gnunn1/tilix-web/issues"
+  },
+  "homepage": "https://github.com/gnunn1/tilix-web#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-image": "^2.8.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2"
+  }
+}

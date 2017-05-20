@@ -1,7 +1,8 @@
 ---
 title: VTE Configuration
 id: vteconfig
-layout: default
+layout: manual
+description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia finibus ullamcorper. Fusce dictum sagittis eros nec interdum. Ut et posuere leo. Morbi at augue quis augue convallis euismod ac et dui. 
 ---
 #### Background
 
