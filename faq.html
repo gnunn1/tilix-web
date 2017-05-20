@@ -6,6 +6,8 @@ layout: default
 {% for faq in site.faqs %}
     <div id="{{faq.id}}">
         <h1>{{faq.title}}</h1>
-        <p>{{faq.content}}</p>
+        <div>
+            {{faq.content}}
+        </div>
     </div>
 {% endfor %}
