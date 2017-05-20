@@ -2,7 +2,7 @@
 title: Command Line Actions
 id: cliactions
 layout: manual
-description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia finibus ullamcorper. Fusce dictum sagittis eros nec interdum. Ut et posuere leo. Morbi at augue quis augue convallis euismod ac et dui. 
+description:  Tilix supports the use of command line actions to have the running instance execute an action that you would typically do through the user interface, for example splitting a terminal.
 ---
 #### Introduction
 
