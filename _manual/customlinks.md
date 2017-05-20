@@ -1,7 +1,8 @@
 ---
 title: Custom Hyperlinks
 id: customlinks
-layout: default
+layout: manual
+description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia finibus ullamcorper. Fusce dictum sagittis eros nec interdum. Ut et posuere leo. Morbi at augue quis augue convallis euismod ac et dui. 
 ---
 Tilix allows custom hyperlinks to be defined using regular expressions. These links can then be clicked on to launch an application passing information from the match to the application.
 

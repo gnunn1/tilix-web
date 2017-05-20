@@ -1,10 +1,9 @@
 ---
 title: Titles
 id: titles
-layout: default
+layout: manual
+description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia finibus ullamcorper. Fusce dictum sagittis eros nec interdum. Ut et posuere leo. Morbi at augue quis augue convallis euismod ac et dui. 
 ---
-### Titles
-
 Tilix support using variables in the various titles and names it allows to be configured. This enables the title to better reflect the current state of the application, session or currently focused terminal. Variables can be used in the following locations:
 
 * Window title

@@ -1,3 +1,16 @@
+html {
+  height: 100%;
+}
+body{
+    min-height: 100%;
+    position: relative;
+}
+body:after {
+    content: '';
+    display: block;
+    height: 100px;
+}
+
 .main {
   padding-top: 3rem;
 }
@@ -25,6 +38,20 @@ pre{
   margin:0;
 }
 
+#news {
+  .row {
+    margin-bottom: 10px;
+    h5 {
+      margin: 0;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+#manual p {
+    text-align: justify;
+}
 
 
 #contribute {
@@ -46,19 +73,38 @@ pre{
     }
 }
 
-.footer {
+footer {
+  position: absolute;
   margin-top: 20px;
   bottom: 0;
   width: 100%;
   height: 30px;
-  padding: 12px;
+  padding: 12px 0;
+  .footer-content {
+    width: 70%;
+    left: 15%;
+    right: 15%;
+    padding: 5px;
+    margin: 0 auto;
+    .footer-left {
+      float: left;
+    }
+    .footer-right {
+      float:right;
+    }
+  }
 
-  .footer-left {
-    float: left
+  @media only screen and (max-width: 720px) {
+    .footer-content {
+      overflow: hidden;
+      .footer-left, .footer-right{
+        float: none;
+        text-align: center;
+
+      }
+    }
   }
-  .footer-right {
-    float:right;
-  }
+
 }
 
 

@@ -22,7 +22,7 @@ body {
 a {
   color: $link-color;
   &:hover {
-    color: darken($link-color, 5%);
+    color: $link-color-hover;
   }
 }
 

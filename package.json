@@ -19,7 +19,9 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^3.2.0",
+    "gulp-image": "^2.8.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.1.2"
   }
 }
