@@ -2,7 +2,7 @@
 title: Quake
 id: quake
 layout: manual
-description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia finibus ullamcorper. Fusce dictum sagittis eros nec interdum. Ut et posuere leo. Morbi at augue quis augue convallis euismod ac et dui. 
+description:  Always have a terminal ready to go at the press of a key. Like the eponymous console in the 3D game Quake, this feature enables a terminal to appear at the top of the screen at a touch of key.
 ---
 #### Introduction
 
