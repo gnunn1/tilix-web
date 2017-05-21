@@ -2,7 +2,7 @@
 title: Triggers
 id: triggers
 layout: manual
-description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia finibus ullamcorper. Fusce dictum sagittis eros nec interdum. Ut et posuere leo. Morbi at augue quis augue convallis euismod ac et dui. 
+description:  Triggers are defined as regular expressions that is executed against content in the terminal. When a trigger matches content, a corresponding action is executed. 
 ---
 *Note that trigger support requires that the GTK VTE widget be built with a tilix specific [patch](https://github.com/gnunn1/tilix/blob/master/experimental/vte/alternate-screen.patch), otherwise triggers are disabled. Arch users can access this functionality by installing the [vte3-tilix-git](https://aur.archlinux.org/packages/vte3-tilix-git) package.*
 
