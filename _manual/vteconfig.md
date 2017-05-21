@@ -2,7 +2,7 @@
 title: VTE Configuration
 id: vteconfig
 layout: manual
-description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia finibus ullamcorper. Fusce dictum sagittis eros nec interdum. Ut et posuere leo. Morbi at augue quis augue convallis euismod ac et dui. 
+description:  Tilix requires that the GTK VTE widget be properly configured in order to work optimally. Unfortunately a number of Linux distributions such as Ubuntu fail to do so by default requiring manual intervention to correct. 
 ---
 #### Background
 
