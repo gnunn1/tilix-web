@@ -2,4 +2,4 @@
 title: Debian
 id: debian
 ---
-An official Debian package of Terminix is available: [Package, 32bit version available](https://packages.debian.org/sid/terminix).
+Official Tilix packages are available for [stretch-backports](https://packages.debian.org/stretch-backports/tilix), [buster](https://packages.debian.org/buster/tilix) and [sid](https://packages.debian.org/sid/tilix).
