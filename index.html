@@ -77,7 +77,7 @@ title: A tiling terminal emulator
             <nav>
                 <ul class="tabs-navigation" id="tabs">
                     {% for package in site.packages %}
-                    {% if package.id == "/packages/aoscos" %}
+                    {% if package.id == "/packages/antergos" %}
                     <li class="selected">
                     {% else %}
                     <li>
@@ -94,7 +94,7 @@ title: A tiling terminal emulator
             </nav>
             <ul class="tabs-content">
                 {% for package in site.packages %}
-                    {% if package.id == "/packages/aoscos" %}
+                    {% if package.id == "/packages/antergos" %}
                     <li data-content="{{ package.id }}" class="selected">
                     {% else %}
                     <li data-content="{{ package.id }}">
