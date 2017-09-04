@@ -72,17 +72,19 @@ title: A tiling terminal emulator
     <div class="section packages" id="packages">
         <h3 class="section-heading">Getting Tilix</h3>
         <p class="section-description">The best way to get Tilix is from packages maintained for your specific Linux distribution. The following distributions have packages available.</p>
-		{% if site.packages != empty %}
+    {% if site.packages != empty %}
+        {% assign packages = site.packages | sort: 'order' %}
         <div class="tabs">
             <nav>
                 <ul class="tabs-navigation" id="tabs">
-                    {% for package in site.packages %}
-                    {% if package.id == "/packages/aoscos" %}
+                    {% for package in packages %}
+                    {% assign loopindex = forloop.index %}
+                    {% if loopindex == 1 %}
                     <li class="selected">
                     {% else %}
                     <li>
                     {% endif %}
-                        <a data-content="{{ package.id }}">{{ package.title }}</a>
+                        <a data-content="{{ package._id }}">{{ package.title }}</a>
                     </li>
                     {% endfor %}
                     <li class="hamburger-button">
@@ -93,11 +95,12 @@ title: A tiling terminal emulator
                 </ul>
             </nav>
             <ul class="tabs-content">
-                {% for package in site.packages %}
-                    {% if package.id == "/packages/aoscos" %}
-                    <li data-content="{{ package.id }}" class="selected">
+                {% for package in packages %}
+                    {% assign loopindex = forloop.index %}
+                    {% if loopindex == 1 %}
+                    <li data-content="{{ package._id }}" class="selected">
                     {% else %}
-                    <li data-content="{{ package.id }}">
+                    <li data-content="{{ package._id }}">
                     {% endif %}
                     {{ package.content }}
                     </li>
