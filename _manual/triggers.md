@@ -38,7 +38,7 @@ Here are some examples to help you use this feature:
 
 Regular Expression | Action | Parameter | Description
 -------------------|--------|-----------|------------
-^\[(?P&lt;user>.*)@(?P&lt;host>[-a-zA-Z0-9]\*) | Update State | username=$1;hostname=$2 | Parses the username and hostname from a Linux prompt command that uses the following format: *[username@hostname directory]$*
+```^\[(?P&lt;user>.*)@(?P&lt;host>[-a-zA-Z0-9]*)``` | Update State | username=$1;hostname=$2 | Parses the username and hostname from a Linux prompt command that uses the following format: *[username@hostname directory]$*
 
 #### How It Works
 
