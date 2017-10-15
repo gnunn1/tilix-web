@@ -8,9 +8,7 @@ Tilix complies with the Gnome HIG and the UI of tilix is inspired by [Gnome Buil
 
 ##### Why aren't sessions displayed as tabs?
 
-While we don't have anything against a tabbed user interface, we really wanted to try something different with Tilix. Most text editors use tabbed interfaces for navigating between open files, Gnome Builder is trying something different in this regard and we were curious to see how well this would work for a terminal emulator.
-
-This was discussed as part of [Issue #12](https://github.com/gnunn1/tilix/issues/12) which has been closed, there are no plans to support tabs in the future.
+While previously a tabbed interface was not supported, starting with 1.7.0 you can opt to use tabs instead of the more traditional sidebar interface. The option is to configure tabs is in the Preferences dialog under Appearance.
 
 ##### When I split a terminal it starts in the home directory instead of inheriting the directory
 
@@ -18,7 +16,7 @@ In Tilix the intention is that a split terminal should open in the same director
 
 ##### Is it possible to use the new overlay scrollbars introduced in Adwaita?
 
-No, unfortunately using those require the use of a GTKScrolledWindow which is not supported by the VTE widget as per [upstream](https://bugzilla.gnome.org/show_bug.cgi?id=760718).
+Yes, by default when using GTK 3.22 or newer overlay scrollbars are used.
 
 ##### How come my scrollbars are not transparent like in Adwaita?
 
