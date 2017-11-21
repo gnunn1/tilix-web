@@ -25,7 +25,7 @@ Fortunately fixing this issue is quite easy, you can do either of the two option
 
 ##### 1. Source vte.sh in bashrc
 
-Update ```~.bashrc``` (or ```~.zshrc``` if you are using zsh) to execute vte.sh directly, this involves adding the following line at the end of the file.
+Update ```~/.bashrc``` (or ```~/.zshrc``` if you are using zsh) to execute vte.sh directly, this involves adding the following line at the end of the file.
 {% highlight bash %}
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
