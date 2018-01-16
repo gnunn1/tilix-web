@@ -6,4 +6,4 @@ order: 8
 
 ###### PPA
 
-Tilix is available for Ubuntu thanks to the WebUpd8 team and their PPA: [WebUpd8](https://launchpad.net/~webupd8team/+archive/ubuntu/terminix)
+Unfortunately, there is no package available at the moment that is up to date with the latest Tilix releases. The best option at this time is to use a Debian package which are also out of date but more current then available Ubuntu PPAs.
