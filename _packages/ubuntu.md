@@ -1,9 +1,9 @@
 ---
 title: Ubuntu
 _id: ubuntu
-order: 9
+order: 10
 ---
 
-###### PPA
+Officiel Tilix packages are available for Ubuntu [artful](https://packages.ubuntu.com/artful/tilix) and [bionic](https://packages.ubuntu.com/bionic/tilix).
 
-Tilix is available for Ubuntu thanks to the WebUpd8 team and their PPA: [WebUpd8](https://launchpad.net/~webupd8team/+archive/ubuntu/terminix)
+For older versions, tilix is available thanks to the WebUpd8 team and their PPA: [WebUpd8](https://launchpad.net/~webupd8team/+archive/ubuntu/terminix).
