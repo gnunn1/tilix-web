@@ -22,4 +22,4 @@ Configuring this hot key for GNOME is quite simple, simply open the Keyboard set
 
 #### Wayland
 
-There is a limitation with Wayland: the setting to use a monitor other than the primary monitor is disabled. This is because Wayland does not support moving a window programmatically between monitors.
+Note that quake mode in Wayland is currently not available, while initially supported it proved to be problematic given the limitations of the Wayland environment
