@@ -25,5 +25,4 @@ Configuring this hot key for GNOME is quite simple, simply open the Keyboard set
 Note that quake mode in Wayland is currently not available, while initially supported it proved to be problematic given the limitations of the Wayland environment. Here are the options for enabling in Wayland:
 
 * Force the GDK back-end to be X11. You can force tilix to use X11 as the backend instead of Wayland by setting the quake command as ```GDK_BACKEND=x11 tilix --quake```. Note that you should also update the tilix desktop file to force the x11 backend as well.
-
-* There is a gnome-shell (quake)[https://github.com/repsac-by/gnome-shell-extension-quake-mode] extension that enables any application to run in quake mode.
+* There is a gnome-shell [quake](https://github.com/repsac-by/gnome-shell-extension-quake-mode) extension that enables any application to run in quake mode.
