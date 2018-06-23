@@ -26,3 +26,7 @@ Note that quake mode in Wayland is currently not available, while initially supp
 
 * Force the GDK back-end to be X11. You can force tilix to use X11 as the backend instead of Wayland by setting the quake command as ```GDK_BACKEND=x11 tilix --quake```. Note that you should also update the tilix desktop file to force the x11 backend as well.
 * There is a gnome-shell [quake](https://github.com/repsac-by/gnome-shell-extension-quake-mode) extension that enables any application to run in quake mode.
+
+### KDE
+
+If you have the issue where the tilix quake window does not receive focus, try disabling the feature "Focus stealing prevention" in KDE as per the comment [here](https://github.com/gnunn1/tilix/issues/895#issuecomment-385275324).
