@@ -29,3 +29,9 @@ That comes from [powerline](https://github.com/powerline/powerline) and is not s
 ##### I set a background image in preferences but it is not visible, how do I fix this?
 
 Background images requires transparency to work, in order to view the background image you need to adjust the transparency slider in the appropriate profile.
+
+##### I am seeing some visual issues (slow scrollback performance, odd rendering) that I don't see in other VTE based terminal emulators?
+
+By default tilix uses an overlay scrollbar rather then a separate scrollbar. This configuration is more attractive then the regular scrollbar, particularly when tiling terminals. However as far as I am aware Tilix is the only VTE based terminal emulator that does so at this time.
+
+As a result this feature does not receive wide testing and there are a few known issues with it. Uf you are having issues, try disabling overlay scrollbars in ```Preferences | Appearances | Use overlay scrollbars```.
