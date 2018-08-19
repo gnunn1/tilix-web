@@ -1,5 +1,5 @@
 ---
-title: Cent OS 7.3
+title: Cent OS 7.5
 _id: centos
 order: 4
 ---
