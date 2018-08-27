@@ -34,4 +34,4 @@ Background images requires transparency to work, in order to view the background
 
 By default tilix uses an overlay scrollbar rather then a separate scrollbar. This configuration is more attractive then the regular scrollbar, particularly when tiling terminals. However as far as I am aware Tilix is the only VTE based terminal emulator that does so at this time.
 
-As a result this feature does not receive wide testing and there are a few known issues with it. Uf you are having issues, try disabling overlay scrollbars in ```Preferences | Appearances | Use overlay scrollbars```.
+As a result this feature does not receive wide testing and there are a few known issues with it. If you are having issues, try disabling overlay scrollbars in ```Preferences | Appearances | Use overlay scrollbars```.
