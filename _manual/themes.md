@@ -44,4 +44,4 @@ Tilix supports themes for configuring the color scheme of the terminal, each the
 
 Themes are loaded from one of two places by Tilix. The first is ```/usr/share/tilix/schemes```, these are the themes that are shipped with Tilix. The second place that Tilix looks for theme files is in the user home directory, specifically ```~/.config/tilix/schemes```. Users can place any custom themes they want to use here.
 
-While Tilix only includes a small number of themes, additional themes can be easily downloaded and installed. The GitHub repository [Tilix-Themes](https://github.com/storm119/Tilix-Themes) has a wide variety of pre-built themes to choose from.
+While Tilix only includes a small number of themes, additional themes can be easily downloaded and installed. For instance, there are a couple of GitHub repositories as [Tilix-Themes](https://github.com/storm119/Tilix-Themes) and [gogh-to-tilix](https://github.com/isacikgoz/gogh-to-tilix) which have various pre-built themes.
