@@ -47,7 +47,7 @@ function custom_prompt() {
   VTE_PWD_THING="$(__vte_osc7)"
   PS1="$PS1$VTE_PWD_THING"
 }
-PROMPT_COMMAND=`custom_prompt`
+PROMPT_COMMAND=custom_prompt
 {% endhighlight %}
 
 ##### 2. OR use a login shell
