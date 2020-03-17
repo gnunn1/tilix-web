@@ -20,6 +20,24 @@ sudo update-alternatives --config x-terminal-emulator
 
 And then pick Tilix from menu.
 
+For Arch Linux distributions with GNOME you can run the following in a terminal:
+```
+sudo mv /usr/bin/gnome-terminal /usr/bin/gnome-terminal.bck
+sudo mv /usr/lib/gnome-terminal-server /usr/lib/gnome-terminal-server.bck
+sudo ln -s /usr/bin/tilix /usr/bin/gnome-terminal
+sudo ln -s /usr/bin/tilix /usr/lib/gnome-terminal-server
+```
+
+The first two commands make a copy of gnome-terminal and gnome-terminal-server, it is useful if you want to come back. You can do that with:
+```
+sudo rm /usr/bin/gnome-terminal
+sudo rm /usr/lib/gnome-terminal-server
+sudo mv /usr/bin/gnome-terminal.bck /usr/bin/gnome-terminal
+sudo mv /usr/lib/gnome-terminal-server.bck /usr/lib/gnome-terminal-server
+```
+
+If you have another DE you can try to do the same thing but with the terminal of your DE.
+
 ##### How can I disable DBus Activation?
 
 Tilix has DBus activation enabled in the launcher. While for the vast majority of users this does not cause any issues, there have been a few edge cases found in rare situations such as the one identified [here](https://github.com/gnunn1/tilix/issues/870). If you are having this or an issue where the behavior of Tilix is subtlely different then Gnome Terminal, you can try to disable DBus Activation.
