@@ -6,9 +6,9 @@ Website for the Tilix project
 ```bash
 git clone https://github.com/gnunn1/tilix-web/
 ```
-2- Install `jekyll` and `jekyll-paginate`
+2- Install `jekyll`, `jekyll-paginate` and `kramdown-parser-gfm`
 ```bash
-gem install jekyll jekyll-paginate
+gem install jekyll jekyll-paginate kramdown-parser-gfm
 ```
 3- Go the cloned directory and run Jekyll server
 ```bash
