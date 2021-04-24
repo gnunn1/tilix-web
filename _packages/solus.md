@@ -1,7 +1,7 @@
 ---
 title: Solus
 _id: solus
-order: 9
+order: 10
 ---
 
 Tilix is available for Solus from their repositories. You can install tilix as follows:

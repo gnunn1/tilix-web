@@ -1,7 +1,7 @@
 ---
 title: Ubuntu
 _id: ubuntu
-order: 10
+order: 11
 ---
 
 Official Tilix packages are available for Ubuntu [artful](https://packages.ubuntu.com/artful/tilix) and [bionic](https://packages.ubuntu.com/bionic/tilix).
