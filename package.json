@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/gnunn1/tilix-web#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-concat": "^2.6.1",
     "gulp-image": "^2.8.0",
