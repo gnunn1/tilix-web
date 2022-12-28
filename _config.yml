@@ -10,7 +10,7 @@ gems: [jekyll-paginate]
 # Number of articles per page
 paginate: 9
 paginate_path: "/news/page:num/"
-
+plugins: [jekyll-paginate]
 exclude: [README.md]
 collections:
   features:
